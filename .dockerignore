@@ -1,0 +1,17 @@
+.git/
+.cache/
+.github/
+.editorconfig
+
+deepsrouce.toml
+.pre-commit-config.yaml
+*.md
+*.log
+*.sqlite
+*.session
+LICENSE
+Makefile
+
+__pycache__/
+test/
+downloads/
