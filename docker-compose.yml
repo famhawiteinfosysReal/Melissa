@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  Melissa:
+    image: Melissa
+    container_name: MelissaBot
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    env_file:
+      - config.env
+    restart: unless-stopped
+
+# # Uncomment the following lines to use a local MongoDB database
+#     depends_on:
+#       - mongo
+#     environment:
+#       DB_URI: "mongodb://Melissa:mypasswd@mongo"
+
+#   mongo:
+#     image: "mongo:latest"
+#     container_name: MelissaMongo
+#     volumes:
+#       - "mongo_Melissa:/data/db"
+#     environment:
+#       MONGO_INITDB_ROOT_USERNAME: Melissa
+#       MONGO_INITDB_ROOT_PASSWORD: mypasswd
+
+# volumes:
+#   mongo_Melissa:
