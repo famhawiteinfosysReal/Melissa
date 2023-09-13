@@ -24,9 +24,8 @@ Melissa is a modern, easy-to-develop, fully async Telegram group managing bot fo
 -   Localization support.
 -   Class based plugin system.
 
-## [Documentation](https://famhawiteinfosysReal.com/Melissa/docs/home)
+## [Documentation](https://famhawiteinfosysreals.gitbook.io/telegram-bot-project/)
 
-## [Installing](https://famhawiteinfosysReal.com/Melissa/docs/install)
 
 ## Plugin
 
