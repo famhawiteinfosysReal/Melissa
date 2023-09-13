@@ -24,6 +24,9 @@ Melissa is a modern, easy-to-develop, fully async Telegram group managing bot fo
 -   Localization support.
 -   Class based plugin system.
 
+  # Help us in our Translation Project
+  - <a href="https://poeditor.com/projects/view?id=647917"> Melissa Translations</a>
+
 ## [Documentation](https://famhawiteinfosysreals.gitbook.io/telegram-bot-project/)
 
 
