@@ -8,9 +8,9 @@ start-pm: |
   Group a I mi hmang nuom am? A hnuoi a button khu  inhmet raw le!
 help-pm: |
   Ka lo lawm che! Kei **{}** ka nih. [☺️](https://i.ibb.co/jbwpmTn/Melissa-as-Cop-Girl.jpg)
-  Kei hi Feature tha tak tak hai le inthuom ka nih a! La thangpui theina che I hriet nuom a ni chun/
+  Kei hi Feature tha tak tak hai le inthuom ka nih a! La thangpui theina che I hriet nuom a ni chun\
 A hnuoi a mi hai khu ka thangpui thei dan tlanglawn hai chu a nih.
-  **Main** Command hmang thei hai:
+  **Main** command hmang thei hai:
   × /start: I mi suk hring na, ka la hring le hring naw in en na ding hai khawm a I hmang thei ding a nih.
   × /help: PM tieng a thangpuina kan thawn na ding che.
   × /setlang: hnam tawng in thlak thei na ding.
