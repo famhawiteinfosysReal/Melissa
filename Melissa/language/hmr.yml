@@ -7,23 +7,23 @@ start-pm: |
   **Managed With ❤️ By :** [famhawiteinfosysReal Team](https://t.me/famhawiteinfosysReal)
   Group a I mi hmang nuom am? A hnuoi a button khu  inhmet raw le!
 help-pm: |
-  Hello there! My name is **{}**. [☺️](https://i.ibb.co/jbwpmTn/Melissa-as-Cop-Girl.jpg)
-  I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
-  the things I can help you with.
-  **Main** commands available:
-  × /start: Starts me, can be used to check i'm alive or not.
-  × /help: PM's you this message.
-  × /setlang: Change your language preference.
-  × /donate: Get information on how to support me.
+  Ka lo lawm che! Kei **{}** ka nih. [☺️](https://i.ibb.co/jbwpmTn/Melissa-as-Cop-Girl.jpg)
+  Kei hi Feature tha tak tak hai le inthuom ka nih a! La thangpui theina che I hriet nuom a ni chun/
+A hnuoi a mi hai khu ka thangpui thei dan tlanglawn hai chu a nih.
+  **Main** Command hmang thei hai:
+  × /start: I mi suk hring na, ka la hring le hring naw in en na ding hai khawm a I hmang thei ding a nih.
+  × /help: PM tieng a thangpuina kan thawn na ding che.
+  × /setlang: hnam tawng in thlak thei na ding.
+  × /donate:  mi support dan ding hai hrilfie na pek ning I tih.
 
 start-chat: Sending you a warm hi & wishing your day is a happy one!
 help-chat: Contact me in PM to get the list of possible commands.
-add-to-group-button: Add to Group 👥
-start-help-button: Help & Commands ❔
-help-chat-button: Help
+add-to-group-button: Add to Group
+start-help-button: Thangpuina & Commands ❔
+help-chat-button: Thangpuina
 status-page-button: Status
 dashboard-button: Dashboard
-back-button: ⬅️ Back
+back-button: Kir lehna
 donate: |
   Hi, glad to see you want to donate!
   You can donate to us on [our Paypal](https://paypal.me/NickyLrca).
