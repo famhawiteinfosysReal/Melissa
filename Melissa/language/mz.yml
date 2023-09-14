@@ -1,29 +1,29 @@
 #region Main
 start-pm: |
-  Hey there! my name is **{}**. [☺️](https://i.ibb.co/jbwpmTn/Melissa-as-Cop-Girl.jpg)
-  Any questions on how to use me? use /help
-  Join Our [Group](https://t.me/famhawiteinfosysReal) If You wanna Report Issue 🙂
-  I'm here to make your group management fun and easy!
+  Chibai! Ka hming chu **{}** ani. [☺️](https://i.ibb.co/jbwpmTn/Melissa-as-Cop-Girl.jpg)
+  Min hman dan tur ah zawhna i nei em? /help tih hi rawn thawn rawh
+  Kan [Group](https://t.me/famhawiteinfosysReal) hi i harsatna te i thlen nan rawn join ve la.\n
+  I group enkawlna ah chhawk zangkhai tur che in ka inpeih reng e!
   **Managed With ❤️ By :** [famhawiteinfosysReal Team](https://t.me/famhawiteinfosysReal)
-  Wanna Add me to your Group? Just click the button below!
+  Group ah min hmang duh em? A hnuai a button khu hmet rawh le!
 help-pm: |
-  Hello there! My name is **{}**. [☺️](https://i.ibb.co/jbwpmTn/Melissa-as-Cop-Girl.jpg)
-  I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
-  the things I can help you with.
-  **Main** commands available:
-  × /start: Starts me, can be used to check i'm alive or not.
-  × /help: PM's you this message.
-  × /setlang: Change your language preference.
-  × /donate: Get information on how to support me.
+  Ka lo lawm a che! Kei hi **{}** ka ni e. [☺️](https://i.ibb.co/jbwpmTn/Melissa-as-Cop-Girl.jpg)
+  Kei hi Feature tha tak tak nen a thuam ka ni! Kan tanpui theihna che i hre duh anih chuan \
+  a hnuai ami te khu ka puih theih dan che tlanglawn ber an ni.
+  **Main** commands hman theih te:
+  × /start: Min tih nun na, ka la nun leh nun loh en nan pawh i hmang thei ang.
+  × /help: PM lamah tanpuina ka thawn na tur che.
+  × /setlang: Hnam tawng i thlak theihna tur.
+  × /donate: Min support dan tur te hrilhfiahna pek i nih na tur.
 
-start-chat: Sending you a warm hi & wishing your day is a happy one!
-help-chat: Contact me in PM to get the list of possible commands.
-add-to-group-button: Add to Group 👥
-start-help-button: Help & Commands ❔
-help-chat-button: Help
-status-page-button: Status
+start-chat: Hun duhawm leh hlimawm tak i hman ngei ka beisei!
+help-chat: Commands hman theih te i hriat duh chuan PM lam ah min rawn be rawh.
+add-to-group-button: Hming hmang rawh
+start-help-button: Tanpuina leh Command
+help-chat-button: Tanpuina
+status-page-button: Keima chinchang
 dashboard-button: Dashboard
-back-button: ⬅️ Back
+back-button: Kir lehna
 donate: |
   Hi, glad to see you want to donate!
   You can donate to us on [our Paypal](https://paypal.me/NickyLrca).
