@@ -29,7 +29,7 @@ from pyrogram.types import (
     Message,
 )
 
-from anjani import command, filters, listener, plugin, util
+from Melissa import command, filters, listener, plugin, util
 
 LANG_FLAG = {
     "en": f"{emoji.FLAG_UNITED_STATES} English",
