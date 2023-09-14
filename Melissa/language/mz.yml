@@ -293,7 +293,8 @@ language-help: |
   **Available languages:**
   - 🇺🇸 English.
   - 🇮🇩 Indonesia.
-  - 🇮🇳 Mizo.\n
+  - 🇮🇳 Mizo.
+  - 🇮🇳 Hmar.\n
   Commands:
   ×  /setlang | /lang | /language : set your preferred language.\n
   **Note**
