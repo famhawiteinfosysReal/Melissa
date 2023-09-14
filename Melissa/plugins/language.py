@@ -35,7 +35,6 @@ LANG_FLAG = {
     "en": f"{emoji.FLAG_UNITED_STATES} English",
     "id": f"{emoji.FLAG_INDONESIA} Indonesia",
     "mz": f"{emoji.FLAG_INDIA} Mizo",
-    "hmr": f"{emoji.FLAG_INDIA} Hmar",
 }
 
 
