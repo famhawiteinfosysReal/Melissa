@@ -141,8 +141,8 @@ class CommandDispatcher(MixinBase):
                     parts[0] = parts[0][1:]
 
                     # Check if bot command contains a valid username
-                    # eg: /ping@dMelissa_bot will return True
-                    # If current bot instance is dMelissa_bot else False
+                    # eg: /ping@dMelissaBot will return True
+                    # If current bot instance is dMelissaBot else False
                     if self.user.username and self.user.username in parts[0]:
                         # Remove username from command
                         parts[0] = parts[0].replace(f"@{self.user.username}", "")
