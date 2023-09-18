@@ -1,11 +1,17 @@
 # Melissa
 
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
-
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 [![DeepSource](https://deepsource.io/gh/famhawiteinfosysReal/Melissa.svg/?label=active+issues)](https://deepsource.io/gh/famhawiteinfosysReal/Melissa/?ref=repository-badge)
 [![PyPI](https://img.shields.io/pypi/v/Melissa.svg)](https://pypi.org/project/Melissa/)
 
-Can be found on Telegram as [Melissa](https://t.me/dMelissa_bot).
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+
+
+Can be found on Telegram as Melissa
+<a href="https://t.me/dMelissaBot">![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)</a>
 
 Melissa is a modern, easy-to-develop, fully async Telegram group managing bot for Telegram.
 
