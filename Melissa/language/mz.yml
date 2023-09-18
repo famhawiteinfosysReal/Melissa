@@ -286,11 +286,11 @@ filters-rmall: "Successfully removed {} filters in this chat."
 filters-list: "Filters in **{}**:\n"
 #endregion
 #region language
-language-button: Language
+language-button: Hnam ṭawng
 language-help: |
-  This bot comes up with multi language support.
-  You can choose your language preference!\n
-  **Available languages:**
+  Melissa hian hnam ṭawng chi hrang hrang a support asin.
+  Hnam ṭawng i hman duh te thlang rawh!\n
+  **Hnam ṭawng hmannmai theih te:**
   - 🇺🇸 English.
   - 🇮🇩 Indonesia.
   - 🇮🇳 Mizo.
@@ -298,10 +298,10 @@ language-help: |
   Commands:
   ×  /setlang | /lang | /language : set your preferred language.\n
   **Note**
-  You can use this command on group chats to change the language setting on that chat.\n
-current-language: "**{}** current language is **{}**\nSelect language bellow to change"
+  He command hi group lam ah pawh hnam ṭawng thlak nan i hmang thei ang.\n
+current-language: "**{}** a hnam ṭawng hman lai chu **{}** ani\nI thlak duh chuan a hnuai ami khu thlang rawh"
 language-code-error: An error has occured (No language code)... please contact support
-language-set-succes: Language set to {} successfully
+language-set-succes: Hnam ṭawng chu {} ah thlak ani
 language-invalid: Invalid language code.\nAvailable language code {}
 #endregion
 #region misc
@@ -375,7 +375,7 @@ purges-help: |
   **Admin Only:**
   × /del: Delete message replied to.
   × /purge | /prune : Deletes all messages until the replied to message.
-purge-done: "`Purged {} messages in {} second(s)...`"
+purge-done: "`Message {} hi {} second(s)...chhunga purge vek ani`"
 purge-error: "__Can't purge messages more than 2 days__"
 #endregion
 #region reporting
@@ -403,9 +403,9 @@ cant-report-admin: Why should i report a group admin?
 cant-self-report: Hold on... Why you're reporting yourself?
 report-notif: Reported {} to the admins!
 report-admin-format: |
-  **Report from: {chat}**
-  × **Report by: ** {by_user} `{by_user_id}`
-  × **Reported user: ** {reported_mention} `{reported_id}`
+  **Report na: {chat}**
+  × **Report tu: ** {by_user} `{by_user_id}`
+  × **User report: ** {reported_mention} `{reported_id}`
 user-not-in-chat: The user you trying to report is not in this group anymore.
 #endregion
 #region restrictions
@@ -581,9 +581,9 @@ greetings-topic-default: |
   To set a default action topic, please set a default action topic as mentioned in this [topic help]({}).
 greetings-no-input: Please provide the text you want to set!
 bot-added: |
-  Hi... Thanks for inviting me.
-  To see available commands type /help.
-default-welcome: Hey {first}, how are you?\nWelcome to {chatname}
+  Hi... I group lama min dah luh ve avangin ka lawm e.
+  Command hman theih te i hriat duh chuan /help hi rawn thawn rawh.
+default-welcome: Hey {first}, i ṭha maw?\nKan group {chatname} ah kan lo lawm a che
 clean-serv-set: Turned {} service messages cleaning.
 welcome-set: Welcome turned {} on new member join.
 welcome-message-expired: File ID for the media message got expired.\n__This might have occured because you must have changed the bot token. Please re-add the welcome media.__
