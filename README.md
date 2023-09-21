@@ -44,4 +44,6 @@ If you want to make your custom plugins, refer to [Melissa's Plugins Guide](http
 
 -   [Marie](https://github.com/PaulSonOfLars/tgbot)
 -   [Pyrobud](https://github.com/kdrag0n/pyrobud)
+-   [UserbotIndo Anjani Bot](https://github.com/userbotindo/Anjaani)
+ "`UserbotIndo Telegram bot Project Anjani. (you can found on telegram as @dAnjani_bot) Anjani is our main Source for Melissa Telegram bot, without their hard work Melissa can't exist`"
 -   [All Contributors 👥](https://github.com/famhawiteinfosysReal/Melissa/graphs/contributors)
