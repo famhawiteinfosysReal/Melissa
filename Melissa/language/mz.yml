@@ -241,28 +241,28 @@ fed-stat-banned: |
   User is banned in that federation
   **Reason: ** {}
   **Banned on: ** {}
-fed-stat-not-banned: He federation ah hian user hi ban ani lo!
-fed-stat-multi: He user hi he federations ah hian ban a ni\n
+fed-stat-not-banned: User is not banned in that federation!
+fed-stat-multi: This user has been banned in this federations\n
 fed-stat-multi-info: " -  **{}**(`{}`)\n    **Reason: **{}\n"
-fed-stat-multi-not-banned: He user hi eng federation ah mah ban a ni lo!
+fed-stat-multi-not-banned: This user is not banned in any federation!
 fed-backup-empty: Empty federation data...
-fed-restore-done: Backup restoring tih zawh tawh
+fed-restore-done: Done restoring backup
 fed-myfeds-owner: "You are the **owner** of this Federation:\n"
-fed-myfeds-admin: "\nHe a hnuaia Federation ah hian **admin** i ni:\n".
-fed-myfeds-no-admin: Admin nihna federation engmah i nei lo
-fed-set-log-args: "Channel lama federation log set tur chuan i feds connect tur FedID kha tarlang la.\neg: `/setfedlog fedID`".
-fed-not-found: Fed hmuh a ni lo!
-fed-check-identity: Khawngaihin fed siamtu hnenah he button hi hmet la, he action hi confirm turin hrilh rawh.
-fed-log-set-group: "He chat hi **{name}** logs angin set a ni".
-fed-log-set-chnl: "He channel hi fed log atan set a ni tawh a, **{}**\nfed kaihhnawk actions chu hetah hian logged tel a ni ang."
-fed-invalid-identity: Confirmation button hmet tu user hi fed siamtu a ni lo.\nFederation siamtu chauh in fed log a set thei.
-fed-log-unset: Federation log **{}** tan hian paih ani.
-fed-autoban: "User {} hi tuna federation (**{}**) ah hian ban a ni, pet chhuah a ni bawk.\n**A chhan:** {}\n**Ban hun:** {}"
+fed-myfeds-admin: "\nYou are **admin** in this following Federation:\n"
+fed-myfeds-no-admin: Looks like you don't have a federation you're admin on
+fed-set-log-args: "To set a federation log in a channel, please specify the FedID to connect.\neg: `/setfedlog fedID`"
+fed-not-found: Fed not found!
+fed-check-identity: Please ask the fed creator to confirm this action by pressing this button.
+fed-log-set-group: "This chat is set as **{name}** logs"
+fed-log-set-chnl: "This channel has been set as the fed log for **{}**\nall fed related actions will be logged here."
+fed-invalid-identity: The user who clicked confirmation button was not the fed creator.\nOnly the federation creator can set the fed log.
+fed-log-unset: Federation log of **{}** is unset.
+fed-autoban: "User {} is banned in the current federation (**{}**), and has been removed.\n**Reason:** {}\n**Banned on:** {}"
 fed-autoban-chat: "Channel {} is banned in the current federation (**{}**), and has been removed.\n**Reason:** {}\n**Banned on:** {}"
 fed-autoban-subfed: "User {} is banned in subfederation (**{}**) and has been removed\n**Reason:** {}\n**Banned on:** {}"
 fed-autoban-chat-subfed: "Channel {} is banned in subfederation (**{}**) and has been removed\n**Reason:** {}\n**Banned on:** {}"
 fed-autoleave: 'I no longger have permission to ban members in this chat. Leaving fed "{}"(`{}`)'
-fed-owner-cmd: "He command hi federation neitu tan chauh a ni!"
+fed-owner-cmd: "This command is only for federation owner!"
 fed-subs-join: "Federation **{}** has subscribed to **{}**"
 fed-subs-leave: "Federation **{}** has unsubscribed from **{}**"
 #endregion
