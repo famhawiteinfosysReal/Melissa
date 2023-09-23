@@ -25,10 +25,10 @@ status-page-button: Keima chinchang
 dashboard-button: Dashboard
 back-button: Kir lehna
 donate: |
-  Hi, glad to see you want to donate!
-  You can donate to us on [our Paypal](https://paypal.me/NickyLrca).
-  Our team is fully handled by volunteers,, and every little helps to improve our services.
-  Thank you for your support!
+  Min tanpui duh ani tih hriat chu a nuam hle mai!
+  Tanpuina hi kan [Paypal](https://paypal.me/NickyLrca) account lam ah kan dawng thei a, paypal hmang thiam lemlo tan pawh @NickyLra hi biak mai tur ani e.
+  Kei hi Mahni in volunteer tawp ten a thlawn a beisei nei miah lo a an enkawl ka ni a, i tanpuina te hian nasa takin min pui dawn ani.
+  Min thlawp tlat na ah kan lawm e!
 markdown-helper: |
   Markdown is a very powerful formatting tool supported by telegram. {} has some enhancements, to make sure that saved messages are correctly parsed, and to allow you to create buttons.\n
   <b>Supported Markdown:</b>
@@ -180,21 +180,21 @@ fed-invalid-user-id: |
     - `/fstats <user_id>`: check all fban stats for user in all federations.
     - `/fstats <reply>`: check all fban stats for replied user in all federations.
     - `/fstats`: check all fban stats for you in all federations.
-fed-already-connected: This group is already connected to that federation!
-fed-chat-joined-info: Chat joined to **{}** Federation!
-fed-not-connected: This chat isn't connected to that federation!
-fed-chat-leave-info: This chat has left the **{}** Federation!
-fed-no-promote-user: Who should I promote?\nGive me some user!
-fed-no-fed-chat: Chat not connected to any Federation!
-fed-owner-only-promote: Only federation owner can promote new admin!
-fed-already-owner: You are the owner of this Federation!
-fed-already-admin: User was already an admin in this feds!
-fed-promote-done: Succesfully Fpromoted!
-fed-no-demote-user: Who should I demote?\nGive me a user!
-fed-owner-only-demote: Only federation owner can demote new admin!
-fed-user-not-admin: User isn't an admin in this federation!
-fed-demote-done: Succesfully Fdemoted!
-fed-specified-id: Please specified a federation ID!
+fed-already-connected: He group hian he federation hi a zawm tawh sa!
+fed-chat-joined-info: Chat hian **{}** Federation hi a zawm ve ta e!
+fed-not-connected: He chat hi he federation nen hian inzawm na a neilo!
+fed-chat-leave-info: He chat hian **{}** Federation hi a chhuahsan!
+fed-no-promote-user: Tu nge ka promote ang?\nUser tu emaw ber min pe la!
+fed-no-fed-chat: Chat hian Federation engmah zawm a nei lo!
+fed-owner-only-promote: Federation neitu chauhin admin thar a promote thei!
+fed-already-owner: He Federation neitu hi nangmah i ni!
+fed-already-admin: User hi he feds ah hian admin a ni tawh!
+fed-promote-done: Hlawhtling takin Fpromoted a ni!
+fed-no-demote-user: Tute nge demote tur?\nUser min pe rawh le!
+fed-owner-only-demote: Federation neitu chauhin admin thar a demote thei!
+fed-user-not-admin: User hi he federation ah hian admin a ni lo!
+fed-demote-done: Hlawhtling takin Fdemoted a ni!
+fed-specified-id: Federation ID kha han tarlang teh!
 fed-info-text: |
   **Federation Information:**
   **Fed ID: **` {}`
@@ -206,15 +206,15 @@ fed-info-text: |
   **Total groups connected: ** `{}`
   **Total fed subscribers: ** `{}`
 fed-info-subscription: "\nSubscribed to the following feds:\n"
-fed-admin-only: Only federation admin can do this!
+fed-admin-only: Hei hi federation admin chauhin a ti thei!
 fed-admin-text: |
   **{} admins:**
   👑 Owner: {}
-fed-no-admin: There are no admin in this federation!
-fed-no-ban-user: You don't seems to refering a user
+fed-no-admin: He federation ah hian admin an awm lo!
+fed-no-ban-user: User i refer lo ni in a lang
 fed-ban-self: Please... I'm not that dumb!
-fed-ban-owner: How can a federation owner banned in his own federation!
-fed-ban-protected: I won't fban this user!
+fed-ban-owner: Engtin nge federation neitu chu ama federation-ah ban a nih theih!
+fed-ban-protected: He user hi ka fban dawn lo!
 fed-ban-info-update: |
   **New Federation Ban**
   **Federation: **{}
@@ -230,7 +230,7 @@ fed-ban-info: |
   **User: ** {}
   **User ID: ** {}
   **Reason**: {}
-fed-user-not-banned: This user is not Fbanned!
+fed-user-not-banned: He user hi Fbanned a ni lo!
 fed-unban-info: |
   **Un-FedBan**
   **Federation: **{}
@@ -241,28 +241,28 @@ fed-stat-banned: |
   User is banned in that federation
   **Reason: ** {}
   **Banned on: ** {}
-fed-stat-not-banned: User is not banned in that federation!
-fed-stat-multi: This user has been banned in this federations\n
+fed-stat-not-banned: He federation ah hian user hi ban ani lo!
+fed-stat-multi: He user hi he federations ah hian ban a ni\n
 fed-stat-multi-info: " -  **{}**(`{}`)\n    **Reason: **{}\n"
-fed-stat-multi-not-banned: This user is not banned in any federation!
+fed-stat-multi-not-banned: He user hi eng federation ah mah ban a ni lo!
 fed-backup-empty: Empty federation data...
-fed-restore-done: Done restoring backup
-fed-myfeds-owner: "You are the **owner** of this Federation:\n"
-fed-myfeds-admin: "\nYou are **admin** in this following Federation:\n"
-fed-myfeds-no-admin: Looks like you don't have a federation you're admin on
-fed-set-log-args: "To set a federation log in a channel, please specify the FedID to connect.\neg: `/setfedlog fedID`"
-fed-not-found: Fed not found!
-fed-check-identity: Please ask the fed creator to confirm this action by pressing this button.
-fed-log-set-group: "This chat is set as **{name}** logs"
-fed-log-set-chnl: "This channel has been set as the fed log for **{}**\nall fed related actions will be logged here."
-fed-invalid-identity: The user who clicked confirmation button was not the fed creator.\nOnly the federation creator can set the fed log.
-fed-log-unset: Federation log of **{}** is unset.
-fed-autoban: "User {} is banned in the current federation (**{}**), and has been removed.\n**Reason:** {}\n**Banned on:** {}"
+fed-restore-done: Backup restoring tih zawh tawh
+fed-myfeds-owner: "He Federation **neitu** hi i ni:\n".
+fed-myfeds-admin: "\nHe a hnuaia Federation ah hian **admin** i ni:\n".
+fed-myfeds-no-admin: Admin nihna federation engmah i nei lo
+fed-set-log-args: "Channel lama federation log set tur chuan i feds connect tur FedID kha tarlang la.\neg: `/setfedlog fedID`".
+fed-not-found: Fed hmuh a ni lo!
+fed-check-identity: Khawngaihin fed siamtu hnenah he button hi hmet la, he action hi confirm turin hrilh rawh.
+fed-log-set-group: "He chat hi **{name}** logs angin set a ni".
+fed-log-set-chnl: "He channel hi fed log atan set a ni tawh a, **{}**\nfed kaihhnawk actions chu hetah hian logged tel a ni ang."
+fed-invalid-identity: Confirmation button hmet tu user hi fed siamtu a ni lo.\nFederation siamtu chauh in fed log a set thei.
+fed-log-unset: Federation log **{}** tan hian paih ani.
+fed-autoban: "User {} hi tuna federation (**{}**) ah hian ban a ni, pet chhuah a ni bawk.\n**A chhan:** {}\n**Ban hun:** {}"
 fed-autoban-chat: "Channel {} is banned in the current federation (**{}**), and has been removed.\n**Reason:** {}\n**Banned on:** {}"
 fed-autoban-subfed: "User {} is banned in subfederation (**{}**) and has been removed\n**Reason:** {}\n**Banned on:** {}"
 fed-autoban-chat-subfed: "Channel {} is banned in subfederation (**{}**) and has been removed\n**Reason:** {}\n**Banned on:** {}"
 fed-autoleave: 'I no longger have permission to ban members in this chat. Leaving fed "{}"(`{}`)'
-fed-owner-cmd: "This command is only for federation owner!"
+fed-owner-cmd: "He command hi federation neitu tan chauh a ni!"
 fed-subs-join: "Federation **{}** has subscribed to **{}**"
 fed-subs-leave: "Federation **{}** has unsubscribed from **{}**"
 #endregion
@@ -275,7 +275,7 @@ filters-help: |
   × /stop <keyword>: Stop the filter with the keyword.
   × /rmallfilters: Stop all filters in this chat.
 
-  Filters also support markdown (check /markdownhelp).
+  Filter hian markdown a support bawk (/markdownhelp tih kha check rawh).
 filters-added: "Successfully added `{}` as filters."
 filters-removed: "Successfully removed `{}` from filters."
 filter-help: "Usage: `/filter <trigger> <text>`."
@@ -300,19 +300,19 @@ language-help: |
   **Note**
   He command hi group lam ah pawh hnam ṭawng thlak nan i hmang thei ang.\n
 current-language: "**{}** a hnam ṭawng hman lai chu **{}** ani\nI thlak duh chuan a hnuai ami khu thlang rawh"
-language-code-error: An error has occured (No language code)... please contact support
+language-code-error: Error a awm (Language code awmlo)... support lam ah thlen rawh
 language-set-succes: Hnam ṭawng chu {} ah thlak ani
-language-invalid: Invalid language code.\nAvailable language code {}
+language-invalid: Ṭawng code dik lo.\nṬawng code awm {}
 #endregion
 #region misc
 miscs-button: Misc
 miscs-help: |
-  An "odds and ends" plugin for small, simple commands which don't really fit anywhere.\n
+  Command tenau leh awlsam tak tak, khawiah mah a inmil lo tak tak te tan "odds leh ends" plugin.\n
   **Commands:**
-  ×  /id : Get user id, message id, chat id and many more.
-  ×  /info: Get information about a user.
-  ×  /ping : Get bot latency.
-  ×  /paste <flags> : paste text file to a pastebin service.
+  ×  /id : User id, message id, chat id leh thil dang tam tak en theihna.
+  ×  /info: User chungchang information en na.
+  ×  /ping : Bot latency en na.
+  ×  /paste <flags> : text file chu pastebin service ah paste rawh.
       flags:
           [-h, hastebin] = use hastebin.\n
           [-k, katbin] = use katbin. \n
@@ -325,8 +325,8 @@ paste-invalid: "Invalid '**{}**' flag.\nAvailable flags: __[-s, stashbin, hasteb
 #region mute
 muting-button: Muting
 muting-help: |
-  Some spammers, annoyances, or trolls need to be diciplined.
-  With this plugin you can easily mute someone.\n
+  Spammer, annoyance, troll thin thenkhat te hian discipline khauh tak an mamawh thin a.
+  He plugin hmang hian awlsam takin mi i mute thei ang.\n
   **Admin Only:**
   × /mute <userhandle>: Mute member in the supergroup.
   × /mute <userhandle> X<m|h|d>: Temporary mute a member for X time.
