@@ -247,7 +247,7 @@ fed-stat-multi-info: " -  **{}**(`{}`)\n    **Reason: **{}\n"
 fed-stat-multi-not-banned: He user hi eng federation ah mah ban a ni lo!
 fed-backup-empty: Empty federation data...
 fed-restore-done: Backup restoring tih zawh tawh
-fed-myfeds-owner: "He Federation **neitu** hi i ni:\n".
+fed-myfeds-owner: "He Federation **owner** hi i ni:\n".
 fed-myfeds-admin: "\nHe a hnuaia Federation ah hian **admin** i ni:\n".
 fed-myfeds-no-admin: Admin nihna federation engmah i nei lo
 fed-set-log-args: "Channel lama federation log set tur chuan i feds connect tur FedID kha tarlang la.\neg: `/setfedlog fedID`".
