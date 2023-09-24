@@ -25,9 +25,9 @@ status-page-button: Keima chinchang
 dashboard-button: Dashboard
 back-button: Kir lehna
 donate: |
-  Min tanpui duh ani tih hriat chu a nuam hle mai!
-  Tanpuina hi kan [Paypal](https://paypal.me/NickyLrca) account lam ah kan dawng thei a, paypal hmang thiam lemlo tan pawh @NickyLra hi biak mai tur ani e.
-  Kei hi Mahni in volunteer tawp ten a thlawn a beisei nei miah lo a an enkawl ka ni a, i tanpuina te hian nasa takin min pui dawn ani.
+  Min tanpui duh ani tih hriat chu a nuam hle mai!\n
+  Tanpuina hi kan [Paypal](https://paypal.me/NickyLrca) account lam ah kan dawng thei a,\n paypal hmang thiam lemlo tan pawh @NickyLrca hi biak mai tur ani e.
+  Kei hi Mahni in volunteer tawp ten a thlawn a beisei nei miah lo a an enkawl ka ni a, i tanpuina te hian nasa takin min pui dawn ani.\n
   Min thlawp tlat na ah kan lawm e!
 markdown-helper: |
   Markdown is a very powerful formatting tool supported by telegram. {} has some enhancements, to make sure that saved messages are correctly parsed, and to allow you to create buttons.\n
