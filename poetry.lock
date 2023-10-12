@@ -493,20 +493,6 @@ development = ["black", "flake8", "mypy", "pytest", "types-colorama"]
 
 [[package]]
 name = "dill"
-version = "0.3.6"
-description = "serialize all of python"
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "dill-0.3.6-py3-none-any.whl", hash = "sha256:a07ffd2351b8c678dfc4a856a3005f8067aea51d6ba6c700796a4d9e280f39f0"},
-    {file = "dill-0.3.6.tar.gz", hash = "sha256:e5db55f3687856d8fbdab002ed78544e1c4559a130302693d839dfe8f93f2373"},
-]
-
-[package.extras]
-graph = ["objgraph (>=1.7.2)"]
-
-[[package]]
-name = "dill"
 version = "0.3.7"
 description = "serialize all of Python"
 optional = false
@@ -981,16 +967,14 @@ spelling = ["pyenchant (>=3.2,<4.0)"]
 testutils = ["gitpython (>3)"]
 
 [[package]]
-name = "pymediainfo"
+name = "pymediainfo-pyrofork"
 version = "6.0.1"
 description = "A Python wrapper for the mediainfo library."
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "pymediainfo-6.0.1-py3-none-macosx_10_15_x86_64.whl", hash = "sha256:81165e895e1e362fa11c128ce2bc976cb8a74224f96f309a88ee047106041b0a"},
-    {file = "pymediainfo-6.0.1-py3-none-win32.whl", hash = "sha256:bb3a48ac9706626fd2fa7881f4271728459a1c9a082917deb0c7dd343d8a1be5"},
-    {file = "pymediainfo-6.0.1-py3-none-win_amd64.whl", hash = "sha256:c38e79d4d2062732ae555b564c3cac18a6de4f36e033066c617f386cf5e77564"},
-    {file = "pymediainfo-6.0.1.tar.gz", hash = "sha256:96e04bac0dfcb726bed70c314b1219121c4b9344c66a98f426ce27d7f9abffb0"},
+    {file = "pymediainfo-pyrofork-6.0.1.tar.gz", hash = "sha256:42d109fcaae896033d4915bf73cb324a76d60a7ece43cb4daad6e06e2271177f"},
+    {file = "pymediainfo_pyrofork-6.0.1-py2.py3-none-any.whl", hash = "sha256:54bd3d4b50c6cd40e779b23c8135b470ef38a873aa523b3a55cb001901890575"},
 ]
 
 [[package]]
@@ -1096,18 +1080,18 @@ zstd = ["zstandard"]
 
 [[package]]
 name = "pyrofork"
-version = "2.3.6.post3"
+version = "2.3.8.post1"
 description = "Elegant, modern and asynchronous Telegram MTProto API framework in Python for users and bots"
 optional = false
 python-versions = "~=3.7"
 files = [
-    {file = "PyroFork-2.3.6.post3-py3-none-any.whl", hash = "sha256:364bf8eb77aeb0d8fc02269699da7db7af5106fa0b74d98aa7804eb10aba4e54"},
-    {file = "PyroFork-2.3.6.post3.tar.gz", hash = "sha256:e5b8e4936a6a5290443f751acba0e0016f8ad668011604615821139fbef89fc9"},
+    {file = "PyroFork-2.3.8.post1-py3-none-any.whl", hash = "sha256:806ffd200a06ccd866db3c5c7531e4985cd29d1530d06c1dda1e0b2ca317b018"},
+    {file = "PyroFork-2.3.8.post1.tar.gz", hash = "sha256:fa3ad5649c478da8265d3dc8a25e3ad55dcfd68e7d23cacde80feb93e534920d"},
 ]
 
 [package.dependencies]
 pyaes = "1.6.1"
-pymediainfo = ">=6.0.1,<7.0.0"
+pymediainfo-pyrofork = ">=6.0.1,<7.0.0"
 pymongo = ">=4.3.3,<5.0.0"
 pysocks = "1.7.1"
 
@@ -1519,4 +1503,4 @@ uvloop = ["uvloop"]
 [metadata]
 lock-version = "2.0"
 python-versions = "~=3.9"
-content-hash = "0ba3c02ced011ade6e201c3ef8d5258f3168ed5a3b47da17891d475f08f9e76c"
+content-hash = "c061109f865d5e29048a5d630e98884ed2c53ae47aa15db61f011e121274f66d"
