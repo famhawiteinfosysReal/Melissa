@@ -963,16 +963,14 @@ spelling = ["pyenchant (>=3.2,<4.0)"]
 testutils = ["gitpython (>3)"]
 
 [[package]]
-name = "pymediainfo"
+name = "pymediainfo-pyrofork"
 version = "6.0.1"
 description = "A Python wrapper for the mediainfo library."
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "pymediainfo-6.0.1-py3-none-macosx_10_15_x86_64.whl", hash = "sha256:81165e895e1e362fa11c128ce2bc976cb8a74224f96f309a88ee047106041b0a"},
-    {file = "pymediainfo-6.0.1-py3-none-win32.whl", hash = "sha256:bb3a48ac9706626fd2fa7881f4271728459a1c9a082917deb0c7dd343d8a1be5"},
-    {file = "pymediainfo-6.0.1-py3-none-win_amd64.whl", hash = "sha256:c38e79d4d2062732ae555b564c3cac18a6de4f36e033066c617f386cf5e77564"},
-    {file = "pymediainfo-6.0.1.tar.gz", hash = "sha256:96e04bac0dfcb726bed70c314b1219121c4b9344c66a98f426ce27d7f9abffb0"},
+    {file = "pymediainfo-pyrofork-6.0.1.tar.gz", hash = "sha256:42d109fcaae896033d4915bf73cb324a76d60a7ece43cb4daad6e06e2271177f"},
+    {file = "pymediainfo_pyrofork-6.0.1-py2.py3-none-any.whl", hash = "sha256:54bd3d4b50c6cd40e779b23c8135b470ef38a873aa523b3a55cb001901890575"},
 ]
 
 [[package]]
@@ -1078,18 +1076,18 @@ zstd = ["zstandard"]
 
 [[package]]
 name = "pyrofork"
-version = "2.3.6.post3"
+version = "2.3.10"
 description = "Elegant, modern and asynchronous Telegram MTProto API framework in Python for users and bots"
 optional = false
 python-versions = "~=3.7"
 files = [
-    {file = "PyroFork-2.3.6.post3-py3-none-any.whl", hash = "sha256:364bf8eb77aeb0d8fc02269699da7db7af5106fa0b74d98aa7804eb10aba4e54"},
-    {file = "PyroFork-2.3.6.post3.tar.gz", hash = "sha256:e5b8e4936a6a5290443f751acba0e0016f8ad668011604615821139fbef89fc9"},
+    {file = "PyroFork-2.3.10-py3-none-any.whl", hash = "sha256:e01f16f09b8861bfb630157516ca3444403eab8502f4b4f498b1d6635783f21e"},
+    {file = "PyroFork-2.3.10.tar.gz", hash = "sha256:74216c5e7cda39759f3d0da33230e571f034614d782a13946065f0db32e7f183"},
 ]
 
 [package.dependencies]
 pyaes = "1.6.1"
-pymediainfo = ">=6.0.1,<7.0.0"
+pymediainfo-pyrofork = ">=6.0.1,<7.0.0"
 pymongo = ">=4.3.3,<5.0.0"
 pysocks = "1.7.1"
 
@@ -1506,4 +1504,4 @@ uvloop = ["uvloop"]
 [metadata]
 lock-version = "2.0"
 python-versions = "~=3.9"
-content-hash = "78162b6fb6b3d1af67a0d2d16d58e4353fb1302f7f5728e340fda07c1100cbf7"
+content-hash = "3f9ba2486322832bf44e35fe5c464406b385bf26d099aedd8d7ebb209c8776ae"
