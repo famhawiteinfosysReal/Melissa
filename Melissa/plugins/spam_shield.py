@@ -268,7 +268,8 @@ class SpamShield(plugin.Plugin):
             return False
 
         userlink = user.mention
-        chat_link = f"[{chat.id}](https://t.me/{chat.username})" if chat.username else str(chat.id)
+        chat_username = util.tg.get_username(chat)
+        chat_link = f"[{chat.id}](https://t.me/{chat_username})" if chat_username else str(chat.id)
         reason = ""
         banner = ""
         if cas:
@@ -337,3 +338,4 @@ class SpamShield(plugin.Plugin):
             self.setting(chat.id, enable),
         )
         return ret
+        
