@@ -1,7 +1,7 @@
-version: "3.9"
+﻿version: "3.9"
 
 services:
-  melissaBot:
+  melissa:
     image: melissa
     container_name: melissaBot
     build:
@@ -13,15 +13,20 @@ services:
       - config.env
     restart: unless-stopped
 
-# Uncomment the following lines to use a local MongoDB database
+# # Uncomment the following lines to use a local MongoDB database
+#     depends_on:
+#       - mongo
+#     environment:
+#       DB_URI: "mongodb://melissa:mypasswd@mongo"
+
 #   mongo:
 #     image: "mongo:latest"
-#     container_name: MelissaMongo
+#     container_name: melissaMongo
 #     volumes:
-#       - "mongo_Melissa:/data/db"
+#       - "mongo_melissa:/data/db"
 #     environment:
-#       MONGO_INITDB_ROOT_USERNAME: Melissa
+#       MONGO_INITDB_ROOT_USERNAME: melissa
 #       MONGO_INITDB_ROOT_PASSWORD: mypasswd
 
 # volumes:
-#   mongo_Melissa:
+#   mongo_melissa:
