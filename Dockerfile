@@ -22,7 +22,7 @@ COPY pyproject.toml poetry.lock ./
 RUN pip install --upgrade pip \
     && pip install poetry
 
-RUN poetry install --no-root --only main -E uvloop
+
 
 RUN apt-get -qq install -y --no-install-recommends git
 
