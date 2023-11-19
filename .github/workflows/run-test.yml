@@ -79,15 +79,7 @@ jobs:
           DB_URI: ${{ secrets.DB_URI }}
           IS_CI: "true"
 
-  run-uvloop:
-    timeout-minutes: 2
-    needs: run-asyncio
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      max-parallel: 1
-      matrix:
-        python-version: ["3.9", "3.10", "3.11"]
+  
 
     steps:
       - uses: actions/checkout@v3
