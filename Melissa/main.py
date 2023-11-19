@@ -99,18 +99,18 @@ def start() -> None:
     log.info("Loading code")
 
     _uvloop = False
-    if sys.platform == "win32":
-        policy = asyncio.WindowsProactorEventLoopPolicy()
-        asyncio.set_event_loop_policy(policy)
-    else:
-        try:
-            import uvloop  # type: ignore
-        except ImportError:
-            pass
-        else:
-            uvloop.install()
-            _uvloop = True
-            log.info("Using uvloop event loop")
+    #if sys.platform == "win32":
+        #policy = asyncio.WindowsProactorEventLoopPolicy()
+        #asyncio.set_event_loop_policy(policy)
+    #else:
+        #try:
+            #import uvloop  # type: ignore
+        #except ImportError:
+            #pass
+        #else:
+            #uvloop.install()
+            #_uvloop = True
+            #log.info("Using uvloop event loop")
 
     log.info("Initializing bot")
     loop = asyncio.new_event_loop()
