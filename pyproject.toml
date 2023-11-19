@@ -48,13 +48,12 @@ python-dotenv = ">=0.21.1,<1.1.0"
 PyYAML = "^6.0"
 TgCrypto = "^1.2.5"
 typing-extensions = "^4.5.0"
-uvloop = { version = ">=.17,<0.20", optional = true, platform = "linux" }
+
 yarl = "^1.8.2"
 aiocache = "^0.12.0"
 
 [tool.poetry.extras]
-all = ["uvloop"]
-uvloop = ["uvloop"]
+
 
 [tool.poetry.group.dev.dependencies]
 black = ">=22.12,<24.0"
