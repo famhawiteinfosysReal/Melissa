@@ -144,7 +144,7 @@ speedups = ["Brotli", "aiodns", "cchardet"]
 [[package]]
 name = "aiopath"
 version = "0.5.12"
-description = "📁 Async pathlib for Python"
+description = "ðŸ“ Async pathlib for Python"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -160,7 +160,7 @@ typing-extensions = {version = ">=3.10.0.0", markers = "python_version < \"3.10\
 [[package]]
 name = "aiopath"
 version = "0.6.11"
-description = "📁 Async pathlib for Python"
+description = "ðŸ“ Async pathlib for Python"
 optional = false
 python-versions = ">=3.10"
 files = [
