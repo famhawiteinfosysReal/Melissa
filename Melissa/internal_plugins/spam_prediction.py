@@ -422,7 +422,7 @@ class SpamPrediction(plugin.Plugin):
                 button.append(
                     [
                         InlineKeyboardButton(
-                            "View Message", url=f"MelissaSpamPredictionLog/{msg_id}"
+                            "View Message", url=f"https://t.me/MelissaSpamPredictionLog/{msg_id}"
                         )
                     ]
                 )
