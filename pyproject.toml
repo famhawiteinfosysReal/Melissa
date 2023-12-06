@@ -49,7 +49,7 @@ PyYAML = "^6.0"
 TgCrypto = "^1.2.5"
 typing-extensions = "^4.5.0"
 uvloop = { version = ">=0.17,<0.20", optional = true, platform = "linux" }
-yarl = "^1.8.2"
+yarl = "^1.9.3"
 aiocache = "^0.12.0"
 
 [tool.poetry.extras]
