@@ -47,7 +47,7 @@ pyrofork = "^2.3.14"
 python-dotenv = ">=0.21.1,<1.1.0"
 PyYAML = "^6.0"
 TgCrypto = "^1.2.5"
-typing-extensions = "^4.5.0"
+typing-extensions = "^4.9.0"
 uvloop = { version = ">=0.17,<0.20", optional = true, platform = "linux" }
 yarl = "^1.9.3"
 aiocache = "^0.12.0"
