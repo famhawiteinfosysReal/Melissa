@@ -141,8 +141,8 @@ class CommandDispatcher(MixinBase):
                     parts[0] = parts[0][1:]
 
                     # Check if bot command contains a valid username
-                    # eg: /ping@dMelissaBot will return True
-                    # If current bot instance is dMelissaBot else False
+                    # eg: /ping@dMelissa_bot will return True
+                    # If current bot instance is dMelissa_bot else False
                     if self.user.username and self.user.username in parts[0]:
                         # Remove username from command
                         parts[0] = parts[0].replace(f"@{self.user.username}", "")
@@ -228,7 +228,9 @@ class CommandDispatcher(MixinBase):
                     ctx.input,
                     exc_info=constructor_invoke,
                 )
-                await self.dispatch_alert(f"command `/{message.command[0]}`", constructor_invoke)
+                await self.dispatch_alert(
+                    f"command `/{' '.join(message.command)}`", constructor_invoke, chat.id
+                )
 
             await self.dispatch_event("command", ctx, cmd)
         except Exception as e:  # skipcq: PYL-W0703
@@ -252,7 +254,7 @@ class CommandDispatcher(MixinBase):
                 exc_info=constructor_handler,
             )
             await self.dispatch_alert(
-                f"command `/{message.command[0]}` handler", constructor_handler
+                f"command `/{' '.join(message.command)}`", constructor_handler, chat.id
             )
         finally:
             # Continue processing handler of on_message
