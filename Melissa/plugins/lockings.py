@@ -37,6 +37,7 @@ from pyrogram.enums.message_entity_type import MessageEntityType
 from pyrogram.errors import (
     ChannelPrivate,
     ChatAdminRequired,
+    ChatNotModified,
     MessageDeleteForbidden,
     MessageIdInvalid,
     PeerIdInvalid,
@@ -161,9 +162,9 @@ class Lockings(plugin.Plugin):
         locked = await self.get_chat_restrictions(chat.id)
         for lock_type in locked:
             try:
-                func: Union[
-                    str, Callable[[Client, Message], Coroutine[Any, Any, bool]]
-                ] = LOCK_TYPES[lock_type]
+                func: Union[str, Callable[[Client, Message], Coroutine[Any, Any, bool]]] = (
+                    LOCK_TYPES[lock_type]
+                )
                 if not callable(func):
                     continue
 
@@ -232,7 +233,6 @@ class Lockings(plugin.Plugin):
                         "can_send_messages": permission,
                         "can_send_media_messages": permission,
                         "can_send_polls": permission,
-                        "can_send_other_messages": permission,
                         "can_add_web_page_previews": permission,
                         "can_change_info": permission,
                         "can_invite_users": permission,
@@ -247,7 +247,7 @@ class Lockings(plugin.Plugin):
                         "can_send_roundvideos": permission,
                         "can_send_stickers": permission,
                         "can_send_videos": permission,
-                        "can_send_voice": permission,
+                        "can_send_voices": permission,
                     },
                     "messages": {"can_send_messages": permission},
                     "media": {"can_send_media_messages": permission},
@@ -266,7 +266,7 @@ class Lockings(plugin.Plugin):
                     "videonote": {"can_send_roundvideos": permission},
                     "stickers": {"can_send_stickers": permission},
                     "videos": {"can_send_videos": permission},
-                    "voices": {"can_send_voice": permission},
+                    "voices": {"can_send_voices": permission},
                 }.items()
             )
         )
@@ -343,10 +343,14 @@ class Lockings(plugin.Plugin):
             except ChatAdminRequired as e:
                 return await ctx.get_text(
                     "lockings-admin-required",
-                    message=e.MESSAGE.split()[-1].strip(")").split(".")[-1].strip('"')
-                    if e.MESSAGE
-                    else "",
+                    message=(
+                        e.MESSAGE.split()[-1].strip(")").split(".")[-1].strip('"')
+                        if e.MESSAGE
+                        else ""
+                    ),
                 )
+            except ChatNotModified:
+                return await ctx.get_text("lockings-not-modified")
         elif lock_type in LOCK_TYPES:
             locked = await self.get_chat_restrictions(chat.id)
             if lock_type in locked:
@@ -381,10 +385,14 @@ class Lockings(plugin.Plugin):
             ):
                 return await ctx.get_text("unlockings-type-unlocked", unlock_type=unlock_type)
 
-            await self.bot.client.set_chat_permissions(
-                chat_id=chat.id,
-                permissions=self.unpack_permissions(permissions, "unlock", unlock_type),
-            )
+            try:
+                await self.bot.client.set_chat_permissions(
+                    chat_id=chat.id,
+                    permissions=self.unpack_permissions(permissions, "unlock", unlock_type),
+                )
+            except ChatNotModified:
+                return await ctx.get_text("lockings-not-modified")
+
         elif unlock_type in LOCK_TYPES:
             locked = await self.get_chat_restrictions(chat.id)
             if not locked or unlock_type not in locked:
