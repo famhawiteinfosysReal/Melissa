@@ -195,9 +195,6 @@ class EventDispatcher(MixinBase):
                 dispatcher_error = EventDispatchError(
                     f"raised from {type(err).__name__}: {str(err)}"
                 ).with_traceback(err.__traceback__)
-                await self.dispatch_alert(
-                    f"Event __{event}__ on `{lst.func.__qualname__}`", dispatcher_error
-                )
                 if is_tg_event and args[0] is not None:
                     data = _get_event_data(args[0])
                     self.log.error(
@@ -215,6 +212,11 @@ class EventDispatcher(MixinBase):
                         data.get("input"),
                         exc_info=dispatcher_error,
                     )
+                    await self.dispatch_alert(
+                        f"Event __{event}__ on `{lst.func.__qualname__}`",
+                        dispatcher_error,
+                        data.get("chat_id"),
+                    )
                 else:
                     self.log.error(
                         "Error dispatching event '%s' on %s with data\n%s",
@@ -222,6 +224,10 @@ class EventDispatcher(MixinBase):
                         lst.func.__qualname__,
                         _unpack_args(args),
                         exc_info=dispatcher_error,
+                    )
+                    await self.dispatch_alert(
+                        f"Event __{event}__ on `{lst.func.__qualname__}`",
+                        dispatcher_error,
                     )
                 continue
             finally:
@@ -329,20 +335,26 @@ class EventDispatcher(MixinBase):
                 {"$unset": {"pts": "", "date": "", "qts": "", "seq": ""}},
             )
 
-    async def dispatch_alert(self: "Melissa", invoker: str, exc: BaseException) -> None:
+    async def dispatch_alert(
+        self: "Melissa",
+        invoker: str,
+        exc: BaseException,
+        chat_id: Optional[int] = None,
+    ) -> None:
         """Dispatches an alert to the configured alert log."""
         if not self.config.ALERT_LOG:
             return
 
         log_chat = self.config.ALERT_LOG.split("#")
-        thread_id = None
-        chat_id = int(log_chat[0])
+        log_thread_id = None
+        log_chat_id = int(log_chat[0])
         if len(log_chat) == 2:
-            thread_id = int(log_chat[1])
+            log_thread_id = int(log_chat[1])
 
         alert = f"""🔴 **Melissa ERROR ALERT**
 
   - **Alert by:** {invoker}
+  - **Chat ID:** {chat_id}
   - **Time (UTC):** {datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")}
 
 **ERROR**
@@ -351,9 +363,9 @@ class EventDispatcher(MixinBase):
 ```
         """
         await self.client.send_message(
-            chat_id,
+            log_chat_id,
             alert,
-            message_thread_id=thread_id,  # type: ignore
+            message_thread_id=log_thread_id,  # type: ignore
         )
 
     async def log_stat(self: "Melissa", stat: str, *, value: int = 1) -> None:
