@@ -80,11 +80,11 @@ admins-help: |
   × /zombies : Clean deleted account from your group.
   × /promote <user_id/username> : Promote member to administrator
   × /demote <user_id/username> : Demote administrator to members.
-gpic-no-photo: Give me a photo!
+gpic-no-photo: Thlalak min lo pe la!
 gpic-success-changed: Group picture changed successfully!.
-finding-zombie: "`Finding zombies account...`"
-cleaning-zombie: "**{}** `zombies found and has been removed..!` 🚮"
-zombie-clean: "`Zombies not found, group are clean..` "
+finding-zombie: "`Account awm tawh lo zawn mek ani...`"
+cleaning-zombie: "**{}** `account awm tawh lo hmuh ani a paih chhuah nghal an ni..!` 🚮"
+zombie-clean: "`Account awm tawh lo a awm lo e group hi a fel fai e..` "
 promote-error-invalid: "**User id invalid**\n`make sure he is a member here, and you enter the correct id/username!`"
 promote-error-privacy-restricted: "**The user has privacy settings that prevent to perform this action**\n`make sure he is a member here, and you enter the correct id/username!`"
 promote-error-self: "__You can't promote yourself__"
@@ -153,7 +153,7 @@ federations-help: |
   × /fban: Bans a user or channel from the current chat's federation.
   × /unfban: Unbans a user or channel from the current chat's federation.
   × /fadmins: Get a list of federation admins.
-federation-limit: You can only own 1 federation!
+federation-limit: Federation 1 chiah i nei thei!
 new-federation: |
   **New federation have been created**
   **Name:** {fed_name}
@@ -168,7 +168,7 @@ del-fed-confirm: |
   You will loose your entire ban list and your federation will be permanently lost!
   \nConfirm deletion of **{}**
 fed-confirm-text: "⚠️ Confirm Deletion ⚠️"
-fed-abort-text: Abort
+fed-abort-text: Ti tâwp
 fed-delete-canceled: Federation deletion canceled
 fed-delete-done: I have deleted your Federation!\nAll groups that connect to **{}** are now federation-less.
 fed-cant-two-feds: You cannot join two federations in one chat!
@@ -290,7 +290,7 @@ language-button: Hnam ṭawng
 language-help: |
   Melissa hian hnam ṭawng chi hrang hrang a support asin.
   Hnam ṭawng i hman duh te thlang rawh!\n
-  **Hnam ṭawng hmannmai theih te:**
+  **Hnam ṭawng hman mai theih te:**
   - 🇺🇸 English.
   - 🇮🇩 Indonesia.
   - 🇮🇳 Mizo.
