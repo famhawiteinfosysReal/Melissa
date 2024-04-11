@@ -31,7 +31,7 @@ Melissa = "Melissa.main:start"
 
 [tool.poetry.dependencies]
 python = "~=3.9"
-aiohttp = "^3.9.1"
+aiohttp = "^3.9.4"
 aiopath = [
     { version = "^0.5.12", python = "<3.10" },
     { version = "^0.6.11", python = ">=3.10" },
