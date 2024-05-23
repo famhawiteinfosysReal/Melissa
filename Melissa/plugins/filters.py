@@ -113,7 +113,7 @@ class Filters(plugin.Plugin):
                         message.reply_to_message.id if message.reply_to_message else message.id
                     )
                     types: int = filt["type"]
-                    button = filt.get("button", None)
+                    button = filt.get("buttons", None)
                     if button:
                         keyb = build_button(button)
                     else:
