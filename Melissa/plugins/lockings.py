@@ -45,7 +45,7 @@ from pyrogram.errors import (
 )
 from pyrogram.types import Chat, ChatPermissions, Message
 
-from Melissa import command, filters, plugin, util
+from Melissa import command, filters, listener, plugin, util
 
 
 async def anon(_: Client, message: Message) -> bool:
@@ -132,6 +132,7 @@ class Lockings(plugin.Plugin):
     async def on_plugin_restore(self, chat_id: int, data: MutableMapping[str, Any]) -> None:
         await self.db.update_one({"chat_id": chat_id}, {"$set": data[self.name]}, upsert=True)
 
+    @listener.priority(95)
     async def on_message(self, message: Message) -> None:
         if message.outgoing:
             return
@@ -162,9 +163,9 @@ class Lockings(plugin.Plugin):
         locked = await self.get_chat_restrictions(chat.id)
         for lock_type in locked:
             try:
-                func: Union[str, Callable[[Client, Message], Coroutine[Any, Any, bool]]] = (
-                    LOCK_TYPES[lock_type]
-                )
+                func: Union[
+                    str, Callable[[Client, Message], Coroutine[Any, Any, bool]]
+                ] = LOCK_TYPES[lock_type]
                 if not callable(func):
                     continue
 
