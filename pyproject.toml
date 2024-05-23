@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "Melissa"
-version = "2.13.20"
+version = "2.14.3"
 description = "Telegram group management bot"
 license = "GPL-3.0-or-later"
 authors = [
@@ -31,38 +31,39 @@ Melissa = "Melissa.main:start"
 
 [tool.poetry.dependencies]
 python = "~=3.9"
-aiohttp = "^3.9.1"
+aiohttp = "^3.8.4"
 aiopath = [
     { version = "^0.5.12", python = "<3.10" },
     { version = "^0.6.11", python = ">=3.10" },
 ]
 aiorun = ">=2022.11.1,<2024.0.0"
-certifi = { version = ">=2022.12.7,<2024.0.0", platform = "windows" }
-colorlog = "^6.8.0"
+certifi = { version = ">=2022.12.7,<2025.0.0", platform = "windows" }
+colorlog = "^6.7.0"
 frozenlist = "^1.3.3"
 meval = "^2.5"
 multidict = "^6.0.4"
-pymongo = "^4.6.1"
-pyrofork = "^2.3.14"
+pymongo = "^4.3.3"
+pyrofork = "^2.3.13"
 python-dotenv = ">=0.21.1,<1.1.0"
 PyYAML = "^6.0"
 TgCrypto = "^1.2.5"
 typing-extensions = "^4.5.0"
 uvloop = { version = ">=0.17,<0.20", optional = true, platform = "linux" }
-yarl = "^1.9.3"
+yarl = "^1.8.2"
 aiocache = "^0.12.0"
+prometheus-client = "^0.20.0"
 
 [tool.poetry.extras]
 all = ["uvloop"]
 uvloop = ["uvloop"]
 
 [tool.poetry.group.dev.dependencies]
-black = ">=22.12,<24.0"
+black = ">=22.12,<25.0"
 isort = "^5.12.0"
 pre-commit = ">=2.21,<4.0"
 pylint = ">=2.16.2,<4.0.0"
-flake8 = ">=5.0.4,<7.0.0"
-pytest = "^8.0.1"
+flake8 = ">=5.0.4,<8.0.0"
+pytest = ">=7.2.1,<9.0.0"
 pytest-asyncio = ">=0.20.2,<0.24.0"
 
 #
